@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url(https://www.legendnation.net/apps/main/public/assets/fronts/Minecraft.ttf)
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Minecraft", sans-serif;
+  background: rgb(0, 0, 0);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(63, 73, 134, 1) 83%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(63, 73, 134, 1) 83%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(63, 73, 134, 1) 83%
+  );
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.container {
+  text-align: center;
+  background: rgba(30, 30, 30, 0.95);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  width: 60%;
+  margin-top: 5%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem;
+    border-radius: 0%;
+  }
+}
+
+.minecraft-front {
+  font-family: "Minecraft";
+  color: #ffffff;
+}
+
+.normal-front {
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+form {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #333;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+  accent-color: #007bff;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#result {
+  margin-top: 1.5rem;
+}
+
+#avatarImage {
+  max-width: 50%;
+  border-radius: 12px;
+  border: 2px solid #444;
+}
+
+#avatarUrl {
+  margin-top: 0.5rem;
+  word-break: break-word;
+}
