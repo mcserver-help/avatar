@@ -9,22 +9,7 @@
 body {
   margin: 0;
   font-family: "Minecraft", sans-serif;
-  background: rgb(0, 0, 0);
-  background: -moz-radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(63, 73, 134, 1) 83%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(63, 73, 134, 1) 83%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(63, 73, 134, 1) 83%
-  );
+  background: linear-gradient(to right, #1d213e, #191945);
   color: #e0e0e0;
   display: flex;
   justify-content: center;
@@ -35,7 +20,7 @@ body {
 
 .container {
   text-align: center;
-  background: rgba(30, 30, 30, 0.95);
+  background: rgba(30, 30, 30, 0.7);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
