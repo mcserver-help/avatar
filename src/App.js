@@ -52,6 +52,19 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "Enter") {
+        handleSubmit(event);
+      }
+    };
+
+    document.addEventListener("keypress", handleKeyPress);
+    return () => {
+      document.removeEventListener("keypress", handleKeyPress);
+    };
+  }, [user, legacy, size, background, autobackgroundcolor]);
+
   return (
     <div className="container">
       <h1>Avatar Generator</h1>
