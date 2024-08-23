@@ -49,6 +49,8 @@ This project is a simple web-based avatar generator for Minecraft avatars, utili
 
 ## Technologies Used
 
+- ReactJS
+- TailwindCSS
 - HTML5
 - CSS3
 - JavaScript
