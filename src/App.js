@@ -24,6 +24,11 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    if (!user) {
+      alert("Please enter a username.");
+      return;
+    }
+
     if (background && autobackgroundcolor) {
       alert("You can't use both background and auto background color.");
       return;
